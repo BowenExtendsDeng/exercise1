@@ -2,6 +2,7 @@ package service;
 
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -43,10 +44,9 @@ public class Terminal {
         }else{
             System.out.println("ERROR: can't recognize your system as windows or linux");
         }
-
     }
 
-    public static void initService(){
+    public static void initService() throws IOException {
         setDefaultTitle();
         System.out.println(title + " >>");
         Scanner scanner = new Scanner(System.in);

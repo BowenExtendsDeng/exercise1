@@ -9,10 +9,6 @@ import lombok.Getter;
 @Data
 @Getter
 public class RequestTable {
-
-    private static final int LS = 0;
-    private static final int GET = 1;
-    private static final int BYE = 2;
     private final String filePath;
     private final int mode;
 

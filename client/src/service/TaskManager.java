@@ -15,7 +15,7 @@ import java.io.IOException;
  * @author BowenDeng
  */
 public class TaskManager {
-    public static void commandHandler(String @NotNull [] command){
+    public static void commandHandler(String @NotNull [] command) throws IOException {
         switch (command[0]) {
             case "bye", "exit", "quit" -> bye();
             case "cd" -> changeDir(command);
@@ -64,7 +64,6 @@ public class TaskManager {
         Terminal.setTitle(response.getMsg());
     }
     private static void getFile(String[] fileName){
-
     }
 
     private static void bye(){
